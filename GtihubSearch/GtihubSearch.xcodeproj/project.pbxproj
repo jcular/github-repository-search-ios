@@ -22,6 +22,8 @@
 		BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */; };
 		BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */; };
 		BE63BB01244F28CF00E978AC /* SearchServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */; };
+		BE63BB0B244F347100E978AC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB0A244F347100E978AC /* APIError.swift */; };
+		BE63BB0C244F347100E978AC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB0A244F347100E978AC /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		BE63BAF7244F231C00E978AC /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormater.swift"; sourceTree = "<group>"; };
 		BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceInterface.swift; sourceTree = "<group>"; };
+		BE63BB0A244F347100E978AC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		BE63BAE3244F17F100E978AC /* GtihubSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BB05244F308100E978AC /* Service */,
 				BE63BAE4244F17F100E978AC /* GtihubSearchTests.swift */,
 				BE63BAE6244F17F100E978AC /* Info.plist */,
 			);
@@ -131,6 +135,7 @@
 		BE63BAF1244F182100E978AC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BB09244F346800E978AC /* API */,
 				BE63BAFE244F28C100E978AC /* Service */,
 				BE63BAFA244F276700E978AC /* Utils */,
 				BE63BAF2244F189300E978AC /* Entities */,
@@ -161,6 +166,14 @@
 				BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		BE63BB09244F346800E978AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BB0A244F347100E978AC /* APIError.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 				BE63BAD0244F17ED00E978AC /* SceneDelegate.swift in Sources */,
 				BE63BAF8244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF4244F18B600E978AC /* Repository.swift in Sources */,
+				BE63BB0B244F347100E978AC /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +297,7 @@
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
+				BE63BB0C244F347100E978AC /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

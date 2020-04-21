@@ -6,8 +6,12 @@
 //  Copyright © 2020 Jure Čular. All rights reserved.
 //
 
-import Foundation
+protocol SearchServiceDelegate: AnyObject {
+    func successfullyRetrieved(repositories: [Repository])
+    func failed(withError error: Error)
+}
 
 protocol SearchServiceInterface {
+    var delegate: SearchServiceDelegate? { get set }
     func searchRepositories(searchQuery query: String)
 }
