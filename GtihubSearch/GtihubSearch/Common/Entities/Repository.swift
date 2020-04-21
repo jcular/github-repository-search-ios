@@ -12,7 +12,7 @@ struct Repository: Decodable {
     let id: UInt64
     let name: String
     let owner: Owner
-    let description: String
+    let description: String?
     
     var lastUpdateTime: Date? {
         get {
