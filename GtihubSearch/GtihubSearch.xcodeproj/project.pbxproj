@@ -14,6 +14,10 @@
 		BE63BAD7244F17F100E978AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE63BAD6244F17F100E978AC /* Assets.xcassets */; };
 		BE63BADA244F17F100E978AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE63BAD8244F17F100E978AC /* LaunchScreen.storyboard */; };
 		BE63BAE5244F17F100E978AC /* GtihubSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAE4244F17F100E978AC /* GtihubSearchTests.swift */; };
+		BE63BAF4244F18B600E978AC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAF3244F18B600E978AC /* Repository.swift */; };
+		BE63BAF5244F18B600E978AC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAF3244F18B600E978AC /* Repository.swift */; };
+		BE63BAF8244F231C00E978AC /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAF7244F231C00E978AC /* Owner.swift */; };
+		BE63BAF9244F231C00E978AC /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAF7244F231C00E978AC /* Owner.swift */; };
 		BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */; };
 		BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,8 @@
 		BE63BAE0244F17F100E978AC /* GtihubSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GtihubSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE63BAE4244F17F100E978AC /* GtihubSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtihubSearchTests.swift; sourceTree = "<group>"; };
 		BE63BAE6244F17F100E978AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE63BAF3244F18B600E978AC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BE63BAF7244F231C00E978AC /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormater.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,8 +129,18 @@
 			isa = PBXGroup;
 			children = (
 				BE63BAFA244F276700E978AC /* Utils */,
+				BE63BAF2244F189300E978AC /* Entities */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BE63BAF2244F189300E978AC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BAF3244F18B600E978AC /* Repository.swift */,
+				BE63BAF7244F231C00E978AC /* Owner.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		BE63BAFA244F276700E978AC /* Utils */ = {
@@ -240,6 +256,8 @@
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
 				BE63BAD0244F17ED00E978AC /* SceneDelegate.swift in Sources */,
+				BE63BAF8244F231C00E978AC /* Owner.swift in Sources */,
+				BE63BAF4244F18B600E978AC /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +267,8 @@
 			files = (
 				BE63BAE5244F17F100E978AC /* GtihubSearchTests.swift in Sources */,
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
+				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
+				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
