@@ -20,6 +20,8 @@
 		BE63BAF9244F231C00E978AC /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAF7244F231C00E978AC /* Owner.swift */; };
 		BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */; };
 		BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */; };
+		BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */; };
+		BE63BB01244F28CF00E978AC /* SearchServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		BE63BAF3244F18B600E978AC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BE63BAF7244F231C00E978AC /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+DateFormater.swift"; sourceTree = "<group>"; };
+		BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		BE63BAF1244F182100E978AC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BAFE244F28C100E978AC /* Service */,
 				BE63BAFA244F276700E978AC /* Utils */,
 				BE63BAF2244F189300E978AC /* Entities */,
 			);
@@ -149,6 +153,14 @@
 				BE63BAFB244F277B00E978AC /* Date+DateFormater.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE63BAFE244F28C100E978AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE63BAD2244F17ED00E978AC /* ViewController.swift in Sources */,
+				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
 				BE63BAD0244F17ED00E978AC /* SceneDelegate.swift in Sources */,
@@ -265,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE63BB01244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAE5244F17F100E978AC /* GtihubSearchTests.swift in Sources */,
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
