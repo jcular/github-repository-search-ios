@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  GithubSearch
+
+  Created by Jure Čular on 22/04/2020.
+  Copyright © 2020 Jure Čular. All rights reserved.
+*/
+
+"errorTitle" = "Something went wrong";
+"ok" = "OK";
+"responseInvalid" = "Server's acting up again";
+"serviceUnavailableErrorMessage" = "There's something wrong with the server";
+"searchViewControllerTitlte" = "Search for repositories";
+"repositoryDetailsUpdateTime" = "Last update";
+"repositoryDetailsOwnerName" = "Owner";
+"repositoryDetailsDescription" = "Description";
+"repositoryDetailsName" = "Name";
