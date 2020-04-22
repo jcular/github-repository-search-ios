@@ -29,7 +29,7 @@ final class SearchViewRouter: BaseViewRouter {
     }
 
     private func _openRepositoryDetails(repositoryDetails: RepositoryDetails) {
-//        let wireframe = SearchDetailsWireframe()
-        
+        let router = RepositoryDetailsViewRouter(repositoryDetails: repositoryDetails)
+        navigationViewController?.push(viewRouter: router, animated: true)
     }
 }

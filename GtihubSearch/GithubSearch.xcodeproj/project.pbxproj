@@ -34,6 +34,8 @@
 		BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB212450772600E978AC /* BaseViewRouter.swift */; };
 		BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */; };
 		BE63BB2624507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */; };
+		BE63BB2B24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */; };
+		BE63BB2C24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		BE63BB1D245075B200E978AC /* SearchViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewRouter.swift; sourceTree = "<group>"; };
 		BE63BB212450772600E978AC /* BaseViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRouter.swift; sourceTree = "<group>"; };
 		BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */,
+				BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -342,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE63BB2B24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */,
 				BE63BB11244F38D700E978AC /* SearchViewController.swift in Sources */,
 				BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
@@ -367,6 +372,7 @@
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BB1F245075B200E978AC /* SearchViewRouter.swift in Sources */,
 				BE63BB04244F299800E978AC /* SearchService.swift in Sources */,
+				BE63BB2C24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */,
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
 				BE63BB0C244F347100E978AC /* APIError.swift in Sources */,
