@@ -24,6 +24,12 @@ final class SearchTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        textLabel?.text = nil
+        detailTextLabel?.text = nil
+    }
+
     func configure(item: SearchTableViewCellItem) {
         accessoryType = .disclosureIndicator
         textLabel?.text = item.repositoryName
