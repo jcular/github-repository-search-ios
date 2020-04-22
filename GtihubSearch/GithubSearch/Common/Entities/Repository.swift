@@ -9,7 +9,6 @@
 import Foundation
 
 struct Repository: Decodable {
-    let id: UInt64
     let name: String
     let owner: Owner
     let description: String?
@@ -23,7 +22,6 @@ struct Repository: Decodable {
     private let _lastUpdateTime: String
     
     enum CodingKeys: String, CodingKey {
-        case id
         case name
         case owner
         case description

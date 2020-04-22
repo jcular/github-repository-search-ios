@@ -7,11 +7,9 @@
 //
 
 struct Owner: Decodable {
-    let id: UInt64
     let name: String
     
     enum CodingKeys: String, CodingKey {
-        case id
         case name = "login"
     }
 }
