@@ -30,7 +30,7 @@ class BaseViewRouter {
         }
     }
     
-    private var _navigationViewController: UINavigationController? {
+    var navigationViewController: UINavigationController? {
         get {
             return _viewController.navigationController
         }
@@ -41,18 +41,18 @@ class BaseViewRouter {
 
 extension BaseViewRouter: RouterInterface {
     func popFromNavigationController(animated: Bool) {
-        _navigationViewController?.popViewController(animated: animated)
+        navigationViewController?.popViewController(animated: animated)
     }
     
     func dismiss(animated: Bool) {
-        _navigationViewController?.dismiss(animated: animated)
+        navigationViewController?.dismiss(animated: animated)
     }
     
     func showErrorAlert(with message: String?) {
         let alert = UIAlertController(title: NSLocalizedString("errorTitle", comment: ""), message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .default, handler: nil)
         alert.addAction(okAction)
-        _navigationViewController?.present(alert, animated: true, completion: nil)
+        navigationViewController?.present(alert, animated: true, completion: nil)
     }
 }
 
