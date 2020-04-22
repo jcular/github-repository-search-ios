@@ -27,6 +27,8 @@
 		BE63BB0C244F347100E978AC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB0A244F347100E978AC /* APIError.swift */; };
 		BE63BB17244F42EB00E978AC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */; };
 		BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */; };
+		BE63BB222450772600E978AC /* BaseViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB212450772600E978AC /* BaseViewRouter.swift */; };
+		BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB212450772600E978AC /* BaseViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		BE63BB06244F308D00E978AC /* SearchServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTest.swift; sourceTree = "<group>"; };
 		BE63BB0A244F347100E978AC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		BE63BB212450772600E978AC /* BaseViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,7 @@
 		BE63BB0D244F383400E978AC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BB202450771800E978AC /* Utils */,
 				BE63BB0E244F38B700E978AC /* Search */,
 			);
 			path = Modules;
@@ -203,6 +207,14 @@
 			);
 			path = Search;
 			sourceTree = "<group>";
+		BE63BB202450771800E978AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BB212450772600E978AC /* BaseViewRouter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +320,7 @@
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
+				BE63BB222450772600E978AC /* BaseViewRouter.swift in Sources */,
 				BE63BB03244F299800E978AC /* SearchService.swift in Sources */,
 				BE63BAF8244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BB17244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
@@ -327,6 +340,7 @@
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
 				BE63BB0C244F347100E978AC /* APIError.swift in Sources */,
+				BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */,
 				BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
