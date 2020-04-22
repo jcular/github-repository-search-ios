@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BACD244F17ED00E978AC /* AppDelegate.swift */; };
-		BE63BAD2244F17ED00E978AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BAD1244F17ED00E978AC /* ViewController.swift */; };
 		BE63BAD5244F17ED00E978AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE63BAD3244F17ED00E978AC /* Main.storyboard */; };
 		BE63BAD7244F17F100E978AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE63BAD6244F17F100E978AC /* Assets.xcassets */; };
 		BE63BADA244F17F100E978AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE63BAD8244F17F100E978AC /* LaunchScreen.storyboard */; };
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		BE63BACA244F17ED00E978AC /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE63BACD244F17ED00E978AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE63BAD1244F17ED00E978AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE63BAD4244F17ED00E978AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE63BAD6244F17F100E978AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE63BAD9244F17F100E978AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				BE63BAF1244F182100E978AC /* Common */,
 				BE63BAF0244F180F00E978AC /* SupportingFiles */,
 				BE63BAEF244F180300E978AC /* Resources */,
-				BE63BAD1244F17ED00E978AC /* ViewController.swift */,
 			);
 			path = GithubSearch;
 			sourceTree = "<group>";
@@ -338,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE63BB11244F38D700E978AC /* SearchViewController.swift in Sources */,
-				BE63BAD2244F17ED00E978AC /* ViewController.swift in Sources */,
 				BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
