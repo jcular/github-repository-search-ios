@@ -16,8 +16,9 @@ final class SearchViewRouter: BaseViewRouter {
     override init() {
         super.init()
         let searchService = SearchService()
-        let viewController = SearchViewController(searchService: searchService, searchViewRouter: self)
-        searchService.delegate = viewController
+        let sortingSearchService = SearchServiceSorter(searchService: searchService)
+        let viewController = SearchViewController(searchService: sortingSearchService, searchViewRouter: self)
+        sortingSearchService.delegate = viewController
         temporaryViewController = viewController
     }
 

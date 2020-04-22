@@ -13,6 +13,13 @@ struct Repository: Decodable {
     let owner: Owner
     let description: String?
     
+    init(name: String, owner: Owner, description: String?, lastUpdateTime: String) {
+        self.name = name
+        self.owner = owner
+        self.description = description
+        self._lastUpdateTime = lastUpdateTime
+    }
+    
     var lastUpdateTime: Date? {
         get {
             return Date.isoDate(fromString: _lastUpdateTime)
