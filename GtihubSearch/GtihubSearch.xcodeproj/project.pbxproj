@@ -25,6 +25,8 @@
 		BE63BB08244F308D00E978AC /* SearchServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB06244F308D00E978AC /* SearchServiceTest.swift */; };
 		BE63BB0B244F347100E978AC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB0A244F347100E978AC /* APIError.swift */; };
 		BE63BB0C244F347100E978AC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB0A244F347100E978AC /* APIError.swift */; };
+		BE63BB17244F42EB00E978AC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */; };
+		BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		BE63BB02244F299800E978AC /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		BE63BB06244F308D00E978AC /* SearchServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceTest.swift; sourceTree = "<group>"; };
 		BE63BB0A244F347100E978AC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		BE63BACC244F17ED00E978AC /* GtihubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BB0D244F383400E978AC /* Modules */,
 				BE63BAF1244F182100E978AC /* Common */,
 				BE63BAF0244F180F00E978AC /* SupportingFiles */,
 				BE63BAEF244F180300E978AC /* Resources */,
@@ -184,6 +188,21 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		BE63BB0D244F383400E978AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BB0E244F38B700E978AC /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE63BB0E244F38B700E978AC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +310,7 @@
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
 				BE63BB03244F299800E978AC /* SearchService.swift in Sources */,
 				BE63BAF8244F231C00E978AC /* Owner.swift in Sources */,
+				BE63BB17244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 				BE63BAF4244F18B600E978AC /* Repository.swift in Sources */,
 				BE63BB0B244F347100E978AC /* APIError.swift in Sources */,
 			);
@@ -307,6 +327,7 @@
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
 				BE63BB0C244F347100E978AC /* APIError.swift in Sources */,
+				BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
