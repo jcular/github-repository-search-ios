@@ -1,5 +1,5 @@
 //
-//  SearchServiceSorter.swift
+//  SearchServiceCache.swift
 //  GithubSearch
 //
 //  Created by Jure Čular on 22/04/2020.
@@ -8,12 +8,22 @@
 
 import Foundation
 
-final class SearchServiceSorter: SearchServiceInterface, SearchServiceDelegate {
+fileprivate class CachedRepository {
+    let repositories: [Repository]
+    
+    init(repositories: [Repository]) {
+        self.repositories = repositories
+    }
+}
+
+final class SearchServiceCache: SearchServiceInterface, SearchServiceDelegate {
+    private var _cache: NSCache<NSString, CachedRepository>
     private var _searchService: SearchServiceInterface
     
     var delegate: SearchServiceDelegate?
     
     init(searchService: SearchServiceInterface) {
+        _cache = NSCache()
         _searchService = searchService
         _searchService.delegate = self
     }
@@ -21,14 +31,18 @@ final class SearchServiceSorter: SearchServiceInterface, SearchServiceDelegate {
     // MARK: - SearchServiceInterface -
     
     func searchRepositories(searchQuery query: String) {
-        _searchService.searchRepositories(searchQuery: query)
+        if let cachedObject = _cache.object(forKey: query as NSString)?.repositories {
+            delegate?.successfullyRetrieved(repositories: cachedObject, forQuery: query)
+        } else {
+            _searchService.searchRepositories(searchQuery: query)
+        }
     }
     
     // MARK: - SearchServiceDelegate -
     
     func successfullyRetrieved(repositories: [Repository], forQuery query: String) {
-        let sortedRepositories = _sortRepositoriesByDate(repositories: repositories)
-        delegate?.successfullyRetrieved(repositories: sortedRepositories, forQuery: query)
+        _cache.setObject(CachedRepository(repositories: repositories), forKey: query as NSString)
+        delegate?.successfullyRetrieved(repositories: repositories, forQuery: query)
     }
     
     func failed(withError error: Error) {

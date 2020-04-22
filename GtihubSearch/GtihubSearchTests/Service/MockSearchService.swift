@@ -25,7 +25,7 @@ final class MockSearchService: SearchServiceInterface {
     
     func searchRepositories(searchQuery query: String) {
         if let repositories = _repositories {
-            delegate?.successfullyRetrieved(repositories: repositories)
+            delegate?.successfullyRetrieved(repositories: repositories, forQuery: query)
         } else if let error = _error {
             delegate?.failed(withError: error)
         }

@@ -17,7 +17,7 @@ class MockSearchServiceDelegate: SearchServiceDelegate {
         _errorCallback = errorCallback;
     }
     
-    func successfullyRetrieved(repositories: [Repository]) {
+    func successfullyRetrieved(repositories: [Repository], forQuery query: String) {
         _successfullCallback(repositories)
     }
     

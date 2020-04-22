@@ -17,8 +17,9 @@ final class SearchViewRouter: BaseViewRouter {
         super.init()
         let searchService = SearchService()
         let sortingSearchService = SearchServiceSorter(searchService: searchService)
-        let viewController = SearchViewController(searchService: sortingSearchService, searchViewRouter: self)
-        sortingSearchService.delegate = viewController
+        let cachingSearchService = SearchServiceCache(searchService: sortingSearchService)
+        let viewController = SearchViewController(searchService: cachingSearchService, searchViewRouter: self)
+        cachingSearchService.delegate = viewController
         temporaryViewController = viewController
     }
 

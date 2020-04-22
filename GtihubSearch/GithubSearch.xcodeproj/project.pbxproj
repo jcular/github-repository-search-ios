@@ -45,6 +45,9 @@
 		BE63BB462450C6E700E978AC /* SearchServiceSorterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB452450C6E700E978AC /* SearchServiceSorterTest.swift */; };
 		BE63BB492450C70600E978AC /* MockSerachServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB472450C70600E978AC /* MockSerachServiceDelegate.swift */; };
 		BE63BB4B2450C75C00E978AC /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB4A2450C75C00E978AC /* MockSearchService.swift */; };
+		BE63BB4D2450CADD00E978AC /* SearchServiceCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB4C2450CADD00E978AC /* SearchServiceCache.swift */; };
+		BE63BB4F2450CCBA00E978AC /* SearchServiceCacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB4E2450CCBA00E978AC /* SearchServiceCacheTest.swift */; };
+		BE63BB502450CD9100E978AC /* SearchServiceCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB4C2450CADD00E978AC /* SearchServiceCache.swift */; };
 		BE63BB522450DD1D00E978AC /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB512450DD1D00E978AC /* ProgressHud.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,8 @@
 		BE63BB452450C6E700E978AC /* SearchServiceSorterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceSorterTest.swift; sourceTree = "<group>"; };
 		BE63BB472450C70600E978AC /* MockSerachServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSerachServiceDelegate.swift; sourceTree = "<group>"; };
 		BE63BB4A2450C75C00E978AC /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+		BE63BB4C2450CADD00E978AC /* SearchServiceCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceCache.swift; sourceTree = "<group>"; };
+		BE63BB4E2450CCBA00E978AC /* SearchServiceCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceCacheTest.swift; sourceTree = "<group>"; };
 		BE63BB512450DD1D00E978AC /* ProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +204,7 @@
 				BE63BAFF244F28CF00E978AC /* SearchServiceInterface.swift */,
 				BE63BB02244F299800E978AC /* SearchService.swift */,
 				BE63BB422450C54500E978AC /* SearchServiceSorter.swift */,
+				BE63BB4C2450CADD00E978AC /* SearchServiceCache.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			children = (
 				BE63BB06244F308D00E978AC /* SearchServiceTest.swift */,
 				BE63BB452450C6E700E978AC /* SearchServiceSorterTest.swift */,
+				BE63BB4E2450CCBA00E978AC /* SearchServiceCacheTest.swift */,
 				BE63BB472450C70600E978AC /* MockSerachServiceDelegate.swift */,
 				BE63BB4A2450C75C00E978AC /* MockSearchService.swift */,
 			);
@@ -387,6 +394,7 @@
 				BE63BAF8244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BB17244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 				BE63BAF4244F18B600E978AC /* Repository.swift in Sources */,
+				BE63BB4D2450CADD00E978AC /* SearchServiceCache.swift in Sources */,
 				BE63BB0B244F347100E978AC /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 				BE63BB01244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BB492450C70600E978AC /* MockSerachServiceDelegate.swift in Sources */,
 				BE63BB12244F38D700E978AC /* SearchViewController.swift in Sources */,
+				BE63BB4F2450CCBA00E978AC /* SearchServiceCacheTest.swift in Sources */,
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BB1F245075B200E978AC /* SearchViewRouter.swift in Sources */,
 				BE63BB04244F299800E978AC /* SearchService.swift in Sources */,
@@ -412,6 +421,7 @@
 				BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */,
 				BE63BB4B2450C75C00E978AC /* MockSearchService.swift in Sources */,
 				BE63BB462450C6E700E978AC /* SearchServiceSorterTest.swift in Sources */,
+				BE63BB502450CD9100E978AC /* SearchServiceCache.swift in Sources */,
 				BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

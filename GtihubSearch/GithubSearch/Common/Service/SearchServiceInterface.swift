@@ -7,7 +7,7 @@
 //
 
 protocol SearchServiceDelegate: AnyObject {
-    func successfullyRetrieved(repositories: [Repository])
+    func successfullyRetrieved(repositories: [Repository], forQuery query: String)
     func failed(withError error: Error)
 }
 

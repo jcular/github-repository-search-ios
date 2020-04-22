@@ -104,7 +104,7 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     }
     // MARK: - SearchServiceDelegate -
     
-    func successfullyRetrieved(repositories: [Repository]) {
+    func successfullyRetrieved(repositories: [Repository], forQuery query: String) {
         DispatchQueue.main.async {
             self.hideProgressHud()
             self._repositories = repositories
