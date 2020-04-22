@@ -45,6 +45,7 @@
 		BE63BB462450C6E700E978AC /* SearchServiceSorterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB452450C6E700E978AC /* SearchServiceSorterTest.swift */; };
 		BE63BB492450C70600E978AC /* MockSerachServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB472450C70600E978AC /* MockSerachServiceDelegate.swift */; };
 		BE63BB4B2450C75C00E978AC /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB4A2450C75C00E978AC /* MockSearchService.swift */; };
+		BE63BB522450DD1D00E978AC /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB512450DD1D00E978AC /* ProgressHud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		BE63BB452450C6E700E978AC /* SearchServiceSorterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceSorterTest.swift; sourceTree = "<group>"; };
 		BE63BB472450C70600E978AC /* MockSerachServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSerachServiceDelegate.swift; sourceTree = "<group>"; };
 		BE63BB4A2450C75C00E978AC /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+		BE63BB512450DD1D00E978AC /* ProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				BE63BB212450772600E978AC /* BaseViewRouter.swift */,
+				BE63BB512450DD1D00E978AC /* ProgressHud.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
+				BE63BB522450DD1D00E978AC /* ProgressHud.swift in Sources */,
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
 				BE63BB222450772600E978AC /* BaseViewRouter.swift in Sources */,
 				BE63BB03244F299800E978AC /* SearchService.swift in Sources */,

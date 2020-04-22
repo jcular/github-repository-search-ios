@@ -68,6 +68,7 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     // MARK: - UISearchBarDelegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchString = searchBar.text else { return }
+        showProgressHud()
         _searchService.searchRepositories(searchQuery: searchString)
     }
     
@@ -105,6 +106,7 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     
     func successfullyRetrieved(repositories: [Repository]) {
         DispatchQueue.main.async {
+            self.hideProgressHud()
             self._repositories = repositories
             self._tableView.reloadData()
         }
@@ -112,6 +114,7 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     
     func failed(withError error: Error) {
         DispatchQueue.main.async {
+            self.hideProgressHud()
             self._searchViewRouter.showErrorAlert(with: error.localizedDescription)
         }
     }
