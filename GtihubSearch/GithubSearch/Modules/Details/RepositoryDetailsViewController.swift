@@ -68,6 +68,7 @@ final class RepositoryDetailsViewController: UIViewController {
     }
     
     // MARK: - Setup -
+    
     private func _setup(stackView: UIStackView, inScrollView scrollView: UIScrollView) {
         let spacingConstant: CGFloat = 10
         stackView.alignment = .fill

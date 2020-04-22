@@ -38,6 +38,7 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     // MARK: - Setup -
+    
     private func _setupTableView(tableView: UITableView) {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         

@@ -20,6 +20,8 @@ final class RepositoryDetailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Setup -
+    
     private func _setup(labelText: String, detailText: String?, font: UIFont = UIFont.systemFont(ofSize: 17)) {
         let stackView = UIStackView()
         _setup(stackView: stackView)
