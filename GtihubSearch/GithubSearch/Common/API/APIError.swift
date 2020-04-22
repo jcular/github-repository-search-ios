@@ -12,8 +12,10 @@ enum APIError: Error {
     case invalidResponse
     case serviceUnavailable
     case message(String)
+}
 
-    var localizedDescription: String {
+extension APIError: LocalizedError {
+    public var errorDescription: String? {
         switch self {
         case .message(let string):
             return string
@@ -23,5 +25,4 @@ enum APIError: Error {
             return NSLocalizedString("responseInvalid", comment: "")
         }
     }
-
 }

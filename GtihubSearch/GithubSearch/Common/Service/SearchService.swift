@@ -37,14 +37,30 @@ final class SearchService: SearchServiceInterface {
 
         let task = URLSession.shared.dataTask(with: request) {  [weak self] data, response, error in
             guard let self = self else { return }
-            guard let data = data,
-                let response = response as? HTTPURLResponse,
-                (200 ..< 300) ~= response.statusCode, error == nil else {
-                    self.delegate?.failed(withError: APIError.serviceUnavailable)
+            guard error == nil else {
+                self.delegate?.failed(withError: error!)
+                return
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            
+            guard let data = data else {
+                self.delegate?.failed(withError: APIError.serviceUnavailable)
+                return
+            }
+            guard let response = response as? HTTPURLResponse,
+                (200 ..< 300) ~= response.statusCode else {
+                    var errorsMessage: String
+                    do {
+                        errorsMessage = try jsonDecoder.decode(ErrorResponse.self, from: data).errorMessage
+                    } catch {
+                        self.delegate?.failed(withError: APIError.invalidResponse)
+                        return;
+                    }
+                    self.delegate?.failed(withError: APIError.message(errorsMessage))
                     return
             }
 
-            let jsonDecoder = JSONDecoder()
             
             var repositories: [Repository]
             do {
@@ -53,9 +69,30 @@ final class SearchService: SearchServiceInterface {
                 self.delegate?.failed(withError: APIError.invalidResponse)
                 return;
             }
-            self.delegate?.successfullyRetrieved(repositories: repositories)
+            self.delegate?.successfullyRetrieved(repositories: repositories, forQuery: query)
         }
         task.resume()
     }
 }
 
+fileprivate struct ErrorCause: Decodable {
+    let message: String
+}
+
+fileprivate struct ErrorResponse: Decodable {
+    var errorMessage: String {
+        guard let error = _errors.first else {
+            return _message
+        }
+        
+        return error.message
+    }
+    
+    private let _errors: [ErrorCause]
+    private let _message: String
+    
+    enum CodingKeys: String, CodingKey {
+        case _errors = "errors"
+        case _message = "message"
+    }
+}
