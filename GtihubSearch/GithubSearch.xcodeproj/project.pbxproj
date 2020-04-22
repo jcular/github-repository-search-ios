@@ -108,6 +108,7 @@
 		BE63BACC244F17ED00E978AC /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BE63BB332450BE1200E978AC /* Application */,
 				BE63BB0D244F383400E978AC /* Modules */,
 				BE63BAF1244F182100E978AC /* Common */,
 				BE63BAF0244F180F00E978AC /* SupportingFiles */,
@@ -136,10 +137,9 @@
 		BE63BAF0244F180F00E978AC /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				BE63BACD244F17ED00E978AC /* AppDelegate.swift */,
+				BE63BADB244F17F100E978AC /* Info.plist */,
 				BE63BAD3244F17ED00E978AC /* Main.storyboard */,
 				BE63BAD8244F17F100E978AC /* LaunchScreen.storyboard */,
-				BE63BADB244F17F100E978AC /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -231,6 +231,14 @@
 				BE63BB212450772600E978AC /* BaseViewRouter.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE63BB332450BE1200E978AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BACD244F17ED00E978AC /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
