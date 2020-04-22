@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GtihubSearch
+@testable import GithubSearch
 
 fileprivate final class SearchServiceSpy: SearchServiceInterface{
     private(set) var callCounter: Int = 0

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GtihubSearch
+@testable import GithubSearch
 
 final class SearchServieTests: XCTestCase {
     private let _searchServiceInterface: SearchService = SearchService()
