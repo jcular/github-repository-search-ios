@@ -38,6 +38,8 @@
 		BE63BB2C24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */; };
 		BE63BB382450BE5800E978AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE63BB3B2450BE5800E978AC /* Localizable.strings */; };
 		BE63BB392450BE5800E978AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE63BB3B2450BE5800E978AC /* Localizable.strings */; };
+		BE63BB3D2450C15A00E978AC /* RepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB3C2450C15A00E978AC /* RepositoryDetailView.swift */; };
+		BE63BB3E2450C15A00E978AC /* RepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB3C2450C15A00E978AC /* RepositoryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 		BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewRouter.swift; sourceTree = "<group>"; };
 		BE63BB3A2450BE5800E978AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE63BB3C2450C15A00E978AC /* RepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,7 @@
 			children = (
 				BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */,
 				BE63BB2A24508CD300E978AC /* RepositoryDetailsViewRouter.swift */,
+				BE63BB3C2450C15A00E978AC /* RepositoryDetailView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -353,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE63BB2B24508CD300E978AC /* RepositoryDetailsViewRouter.swift in Sources */,
+				BE63BB3D2450C15A00E978AC /* RepositoryDetailView.swift in Sources */,
 				BE63BB11244F38D700E978AC /* SearchViewController.swift in Sources */,
 				BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
@@ -373,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE63BB08244F308D00E978AC /* SearchServiceTest.swift in Sources */,
+				BE63BB3E2450C15A00E978AC /* RepositoryDetailView.swift in Sources */,
 				BE63BB01244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BB12244F38D700E978AC /* SearchViewController.swift in Sources */,
 				BE63BAFD244F277B00E978AC /* Date+DateFormater.swift in Sources */,
