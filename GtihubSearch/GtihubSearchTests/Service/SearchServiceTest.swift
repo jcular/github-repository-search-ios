@@ -22,7 +22,7 @@ fileprivate class MockSearchServiceDelegate: SearchServiceDelegate {
         _successfullCallback(repositories)
     }
     
-    func failed(withError error: APIError) {
+    func failed(withError error: Error) {
         _errorCallback(error)
     }
 }
