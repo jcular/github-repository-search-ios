@@ -48,14 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE63BACA244F17ED00E978AC /* GtihubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GtihubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE63BACA244F17ED00E978AC /* GithubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE63BACD244F17ED00E978AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE63BAD1244F17ED00E978AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE63BAD4244F17ED00E978AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE63BAD6244F17F100E978AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE63BAD9244F17F100E978AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE63BADB244F17F100E978AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE63BAE0244F17F100E978AC /* GtihubSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GtihubSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE63BAE0244F17F100E978AC /* GithubSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE63BAE6244F17F100E978AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE63BAF3244F18B600E978AC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BE63BAF7244F231C00E978AC /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		BE63BAC1244F17ED00E978AC = {
 			isa = PBXGroup;
 			children = (
-				BE63BACC244F17ED00E978AC /* GtihubSearch */,
+				BE63BACC244F17ED00E978AC /* GithubSearch */,
 				BE63BAE3244F17F100E978AC /* GtihubSearchTests */,
 				BE63BACB244F17ED00E978AC /* Products */,
 			);
@@ -101,13 +101,13 @@
 		BE63BACB244F17ED00E978AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE63BACA244F17ED00E978AC /* GtihubSearch.app */,
-				BE63BAE0244F17F100E978AC /* GtihubSearchTests.xctest */,
+				BE63BACA244F17ED00E978AC /* GithubSearch.app */,
+				BE63BAE0244F17F100E978AC /* GithubSearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE63BACC244F17ED00E978AC /* GtihubSearch */ = {
+		BE63BACC244F17ED00E978AC /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
 				BE63BB0D244F383400E978AC /* Modules */,
@@ -116,7 +116,7 @@
 				BE63BAEF244F180300E978AC /* Resources */,
 				BE63BAD1244F17ED00E978AC /* ViewController.swift */,
 			);
-			path = GtihubSearch;
+			path = GithubSearch;
 			sourceTree = "<group>";
 		};
 		BE63BAE3244F17F100E978AC /* GtihubSearchTests */ = {
@@ -239,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE63BAC9244F17ED00E978AC /* GtihubSearch */ = {
+		BE63BAC9244F17ED00E978AC /* GithubSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE63BAE9244F17F100E978AC /* Build configuration list for PBXNativeTarget "GtihubSearch" */;
+			buildConfigurationList = BE63BAE9244F17F100E978AC /* Build configuration list for PBXNativeTarget "GithubSearch" */;
 			buildPhases = (
 				BE63BAC6244F17ED00E978AC /* Sources */,
 				BE63BAC7244F17ED00E978AC /* Frameworks */,
@@ -251,14 +251,14 @@
 			);
 			dependencies = (
 			);
-			name = GtihubSearch;
+			name = GithubSearch;
 			productName = GtihubSearch;
-			productReference = BE63BACA244F17ED00E978AC /* GtihubSearch.app */;
+			productReference = BE63BACA244F17ED00E978AC /* GithubSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE63BADF244F17F100E978AC /* GtihubSearchTests */ = {
+		BE63BADF244F17F100E978AC /* GithubSearchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE63BAEC244F17F100E978AC /* Build configuration list for PBXNativeTarget "GtihubSearchTests" */;
+			buildConfigurationList = BE63BAEC244F17F100E978AC /* Build configuration list for PBXNativeTarget "GithubSearchTests" */;
 			buildPhases = (
 				BE63BADC244F17F100E978AC /* Sources */,
 				BE63BADD244F17F100E978AC /* Frameworks */,
@@ -269,9 +269,9 @@
 			dependencies = (
 				BE63BAE2244F17F100E978AC /* PBXTargetDependency */,
 			);
-			name = GtihubSearchTests;
+			name = GithubSearchTests;
 			productName = GtihubSearchTests;
-			productReference = BE63BAE0244F17F100E978AC /* GtihubSearchTests.xctest */;
+			productReference = BE63BAE0244F17F100E978AC /* GithubSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BE63BAC5244F17ED00E978AC /* Build configuration list for PBXProject "GtihubSearch" */;
+			buildConfigurationList = BE63BAC5244F17ED00E978AC /* Build configuration list for PBXProject "GithubSearch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -306,8 +306,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE63BAC9244F17ED00E978AC /* GtihubSearch */,
-				BE63BADF244F17F100E978AC /* GtihubSearchTests */,
+				BE63BAC9244F17ED00E978AC /* GithubSearch */,
+				BE63BADF244F17F100E978AC /* GithubSearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,7 +377,7 @@
 /* Begin PBXTargetDependency section */
 		BE63BAE2244F17F100E978AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BE63BAC9244F17ED00E978AC /* GtihubSearch */;
+			target = BE63BAC9244F17ED00E978AC /* GithubSearch */;
 			targetProxy = BE63BAE1244F17F100E978AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -522,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67Z8CD63L2;
-				INFOPLIST_FILE = GtihubSearch/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = GithubSearch/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67Z8CD63L2;
-				INFOPLIST_FILE = GtihubSearch/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = GithubSearch/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +570,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GtihubSearch.app/GtihubSearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubSearch.app/GithubSearch";
 			};
 			name = Debug;
 		};
@@ -592,14 +592,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GtihubSearch.app/GtihubSearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubSearch.app/GithubSearch";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE63BAC5244F17ED00E978AC /* Build configuration list for PBXProject "GtihubSearch" */ = {
+		BE63BAC5244F17ED00E978AC /* Build configuration list for PBXProject "GithubSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE63BAE7244F17F100E978AC /* Debug */,
@@ -608,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE63BAE9244F17F100E978AC /* Build configuration list for PBXNativeTarget "GtihubSearch" */ = {
+		BE63BAE9244F17F100E978AC /* Build configuration list for PBXNativeTarget "GithubSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE63BAEA244F17F100E978AC /* Debug */,
@@ -617,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE63BAEC244F17F100E978AC /* Build configuration list for PBXNativeTarget "GtihubSearchTests" */ = {
+		BE63BAEC244F17F100E978AC /* Build configuration list for PBXNativeTarget "GithubSearchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE63BAED244F17F100E978AC /* Debug */,
