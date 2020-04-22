@@ -31,10 +31,10 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _searchService.searchRepositories(searchQuery: "zagor")
+        navigationItem.title = NSLocalizedString("searchViewControllerTitlte", comment: "")
+        
         _setupTableView(tableView: _tableView)
         _setupSearchController(searchController: _searchController)
-        _tableView.reloadData()
     }
     
     // MARK: - Setup -
@@ -56,7 +56,6 @@ final class SearchViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     private func _setupSearchController(searchController: UISearchController) {
-
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.autocapitalizationType = .none
         searchController.searchBar.delegate = self
@@ -126,6 +125,6 @@ extension Repository: SearchTableViewCellItem {
         guard let lastUpdateTime = lastUpdateTime else {
             return ""
         }
-        return DateFormatter().string(from: lastUpdateTime)
+        return lastUpdateTime.displayDate()
     }
 }
