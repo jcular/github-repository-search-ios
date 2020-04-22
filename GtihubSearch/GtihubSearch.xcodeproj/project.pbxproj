@@ -33,6 +33,8 @@
 		BE63BB1F245075B200E978AC /* SearchViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB1D245075B200E978AC /* SearchViewRouter.swift */; };
 		BE63BB222450772600E978AC /* BaseViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB212450772600E978AC /* BaseViewRouter.swift */; };
 		BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB212450772600E978AC /* BaseViewRouter.swift */; };
+		BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */; };
+		BE63BB2624507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		BE63BB16244F42EB00E978AC /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		BE63BB1D245075B200E978AC /* SearchViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewRouter.swift; sourceTree = "<group>"; };
 		BE63BB212450772600E978AC /* BaseViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRouter.swift; sourceTree = "<group>"; };
+		BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				BE63BB202450771800E978AC /* Utils */,
+				BE63BB0F244F38BE00E978AC /* Details */,
 				BE63BB0E244F38B700E978AC /* Search */,
 			);
 			path = Modules;
@@ -215,6 +219,15 @@
 			);
 			path = Search;
 			sourceTree = "<group>";
+		};
+		BE63BB0F244F38BE00E978AC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				BE63BB2424507A2200E978AC /* RepositoryDetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		BE63BB202450771800E978AC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +339,7 @@
 			files = (
 				BE63BB11244F38D700E978AC /* SearchViewController.swift in Sources */,
 				BE63BAD2244F17ED00E978AC /* ViewController.swift in Sources */,
+				BE63BB2524507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB00244F28CF00E978AC /* SearchServiceInterface.swift in Sources */,
 				BE63BAFC244F277B00E978AC /* Date+DateFormater.swift in Sources */,
 				BE63BACE244F17ED00E978AC /* AppDelegate.swift in Sources */,
@@ -352,6 +366,7 @@
 				BE63BAF9244F231C00E978AC /* Owner.swift in Sources */,
 				BE63BAF5244F18B600E978AC /* Repository.swift in Sources */,
 				BE63BB0C244F347100E978AC /* APIError.swift in Sources */,
+				BE63BB2624507A2200E978AC /* RepositoryDetailsViewController.swift in Sources */,
 				BE63BB232450772600E978AC /* BaseViewRouter.swift in Sources */,
 				BE63BB18244F42EB00E978AC /* SearchTableViewCell.swift in Sources */,
 			);
